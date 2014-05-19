@@ -1,5 +1,5 @@
 FROM ubuntu:12.04
-MAINTAINER Phusion <info@phusion.nl>
+MAINTAINER Mxmops <mxmops@madebymany.co.uk>
 
 ENV HOME /root
 RUN mkdir /build

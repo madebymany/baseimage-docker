@@ -1,4 +1,4 @@
-NAME = mxmopsy/baseimage
+NAME = mxmops/baseimage
 VERSION = 0.0.1
 
 .PHONY: all build test tag_latest release ssh
