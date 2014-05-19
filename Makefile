@@ -1,5 +1,5 @@
-NAME = phusion/baseimage
-VERSION = 0.9.10
+NAME = mxmopsy/baseimage
+VERSION = 0.0.1
 
 .PHONY: all build test tag_latest release ssh
 

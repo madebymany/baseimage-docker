@@ -39,3 +39,12 @@ apt-get dist-upgrade -y --no-install-recommends
 ## Fix locale.
 $minimal_apt_get_install language-pack-en
 locale-gen en_US
+
+apt-get install -y libsqlite3-dev sqlite3 bzip2 libbz2-dev curl build-essential make
+curl -OL http://www.python.org/ftp/python/3.3.5/Python-3.3.5.tar.xz
+tar xJf ./Python-3.3.5.tar.xz
+cd ./Python-3.3.5
+./configure --prefix=/usr/python3.3
+ln -s /usr/python3.3/bin/python3.3 /usr/bin/python3
+make && make install
+rm -rf /Python-3.3.5*

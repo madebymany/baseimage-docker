@@ -27,7 +27,7 @@ su - vagrant -c 'echo alias d=docker >> ~/.bash_aliases'
 SCRIPT
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-  config.vm.box = 'phusion-open-ubuntu-14.04-amd64'
+  config.vm.box = 'precise64'
   config.vm.box_url = VAGRANT_BOX_URL
   config.ssh.forward_agent = true
   passenger_docker_path = File.absolute_path(PASSENGER_DOCKER_PATH, ROOT)
